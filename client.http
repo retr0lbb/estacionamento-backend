@@ -1,0 +1,29 @@
+@baseUrl = http://localhost:3333
+
+
+
+### BUSCA PROPRIETARIOS
+GET {{baseUrl}}/proprietario
+
+### CRIAR UM PROPRIETARIO
+POST {{baseUrl}}/proprietario
+Content-Type: application/json
+
+{
+    "nome": "Henrique barbosa sampaio",
+    "cpf": "394.426.110-03"
+}
+
+### BUSCAR PROPRIETARIO POR ID
+GET {{baseUrl}}/proprietario/2
+
+### DELETAR UM PROPRIETARIO
+DELETE {{baseUrl}}/proprietario/1
+
+### PUT EM Proprietario
+PUT {{baseUrl}}/proprietario/2
+Content-Type: application/json
+
+{
+    "cpf": "712.396.550-70"
+}
